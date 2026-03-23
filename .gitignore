@@ -209,5 +209,5 @@ __marimo__/
 # Project
 data/
 logs/
-metabase/plugins/
+metabase/plugins/duckdb.metabase-driver.jar
 cred.py
