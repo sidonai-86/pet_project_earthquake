@@ -78,7 +78,7 @@ def get_and_transfer_api_data_to_s3(**context):
 
 with DAG(
     dag_id=DAG_ID,
-    schedule_interval="0 5 * * *",
+    schedule_interval="0 6 * * *",
     default_args=args,
     tags=["s3", "raw"],
     description=SHORT_DESCRIPTION,
@@ -95,7 +95,7 @@ with DAG(
     get_and_transfer_api_data_to_s3 = PythonOperator(
         task_id="get_and_transfer_api_data_to_s3",
         python_callable=get_and_transfer_api_data_to_s3,
-    )
+    ) # type: ignore
 
     end = EmptyOperator(
         task_id="end",
