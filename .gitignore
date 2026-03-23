@@ -209,4 +209,5 @@ __marimo__/
 # Project
 data/
 logs/
+metabase/plugins/
 cred.py

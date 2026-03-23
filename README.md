@@ -12,3 +12,6 @@ source venv/bin/activate && \
 Скачиваем официальный aifflow 2.10.5:
 
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.10.5/docker-compose.yaml'
+
+Для работы нужно в папку metabase/plugins скачать duckdb.metabase-driver.jar
+https://github.com/motherduckdb/metabase_duckdb_driver/releases/tag/1.4.3.1
